@@ -1,7 +1,4 @@
-const webpack = require("webpack");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-const config = {
+  const config = {
   mode: "development",
   entry: {
     "consent-simple": __dirname + "/examples/consent-simple/index.jsx",
@@ -9,14 +6,6 @@ const config = {
   devServer: {
     port: 8000,
   },
-  plugins: [
-    // new HtmlWebpackPlugin({
-    //   title: "Signatu Cookie Notice",
-    //   template: "src/apps/index.ejs",
-    //   chunks: ["vendors~cookie-button", "cookie-button"],
-    //   filename: `${__dirname}/dist/packaged/${package.version}/cookie-button.html`,
-    // }),
-  ],
   resolve: {
     extensions: [".webpack.js", ".web.js", ".js", ".css"],
     fallback: {

@@ -1,6 +1,6 @@
 {
   "name": "@signatu/sdk-example",
-  "version": "0.202.6",
+  "version": "0.202.7",
   "description": "Signatu Javascript SDK examples",
   "main": "index.js",
   "browser": "examples/consent-simple/index.jsx",

@@ -1,8 +1,7 @@
+import ReactDOM from 'react-dom'
+import React, {useState} from 'react'
+import {SignatuProvider} from '@signatu/sdk'
 import {ConsentCheckbox} from '@signatu/consent-react';
-
-const config = {
-    accessToken: "YOUR_ACCESS_TOKEN"
-}
 
 const consentTarget = {
     /** The ID of the subject */
@@ -12,12 +11,26 @@ const consentTarget = {
 }
 
 
-export const ConsentSimple = () =>  (
-    <ConsentCheckbox
-        config={config} 
-        consentTarget={consentTarget}
-        language="en"
-    >
-        You can embed whatever content we want here
-    </ConsentCheckbox>  
+const ConsentSimple = () =>  {
+    const [accessToken, setAccessToken] = useState()
+    return (
+        <>
+            <input onChange={ev => setAccessToken(ev.target.value)} placeholder="signatu access token"/>
+            <SignatuProvider accessToken={accessToken}>
+                <ConsentCheckbox
+                    consentTarget={consentTarget}
+                    language="en"
+                >
+                    You can embed whatever content we want here
+                </ConsentCheckbox>  
+            </SignatuProvider>
+
+        </>
+    )
+}
+
+ReactDOM.render(
+    <ConsentSimple />, 
+    document.getElementById('root')
 )
+
