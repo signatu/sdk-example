@@ -21,7 +21,7 @@ const ConsentSimple = () =>  {
                     consentTarget={consentTarget}
                     language="en"
                 >
-                    You can embed whatever content we want here
+                    You can embed whatever content you want here
                 </ConsentCheckbox>  
             </SignatuProvider>
 

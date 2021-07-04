@@ -5,6 +5,7 @@
   "main": "index.js",
   "browser": "examples/consent-simple/index.jsx",
   "scripts": {
+    "start": "npx webpack serve --open --open-page examples/consent-simple",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
