@@ -1,0 +1,42 @@
+{
+  "name": "@signatu/sdk-example",
+  "version": "0.202.6",
+  "description": "Signatu Javascript SDK examples",
+  "main": "index.js",
+  "browser": "examples/consent-simple/index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signatu/sdk-example.git"
+  },
+  "keywords": [
+    "Signatu",
+    "Javascript",
+    "Examples"
+  ],
+  "author": "torgeir@signatu.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/signatu/sdk-example/issues"
+  },
+  "homepage": "https://github.com/signatu/sdk-example#readme",
+  "dependencies": {
+    "@signatu/sdk": "^0.202.6",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
