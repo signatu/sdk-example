@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/signatu/sdk-example#readme",
   "dependencies": {
-    "@signatu/sdk": "^0.202.6",
+    "@signatu/sdk": "^0.203.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
