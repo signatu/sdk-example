@@ -1,6 +1,6 @@
 {
   "name": "@signatu/sdk-example",
-  "version": "0.202.7",
+  "version": "0.205.0",
   "description": "Signatu Javascript SDK examples",
   "main": "index.js",
   "browser": "examples/consent-simple/index.jsx",
@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/signatu/sdk-example#readme",
   "dependencies": {
-    "@signatu/sdk": "^0.203.1",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "@signatu/sdk": "^0.205.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
